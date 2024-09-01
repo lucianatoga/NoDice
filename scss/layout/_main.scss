@@ -9,7 +9,7 @@ h3{
     font-size: 1.2rem;
     font-weight: bold;
 }
-.cuerpo{
+main{
     min-height: 30rem;
 }
 
@@ -20,19 +20,16 @@ h3{
 
 /* Trabajos.html */
 .trabajos-card{
-    display: flex;
-    flex-flow: column wrap;
-    margin: 1.5rem 0 1.5rem;
+    @include grid(flex, column, center, center, 1.5rem 0 1.5rem);
+    flex-wrap: wrap;
     width: 100%;
-    align-items: center;
 }
 
 .trabajos-card-img-container{
-    display: flex;
-    flex-flow: row wrap;
+    @include grid(flex, row, space-evenly, center, 0);
+    flex-wrap: wrap;
     gap: 1.5rem;
     width: 100%;
-    justify-content: space-evenly;
 }
 
 /*Servicios.html*/
@@ -42,7 +39,7 @@ h3{
         padding: 0.5rem;
     }
     button{
-        background-color: #6d1a8980;
+        background-color: $violet;
         border-color: black;
     }
 }
@@ -51,7 +48,7 @@ h3{
 .contacto-section{
     margin: 1.5rem 0 1.5rem;
     padding: 0.7rem;
-    border: 1px solid rgba(137, 43, 226, 0.438);
+    border: 1px solid $violet;
     border-radius: 10px;
 }
 
@@ -104,7 +101,7 @@ h3{
     }
 }
 
-/* NOTEBOOK */
+/* DESKTOP */
 @media only screen and (min-width:961px){
     .header-container img{
         width: 9rem;
@@ -119,15 +116,10 @@ h3{
 
 /*FOOTER*/
 .footer-ul{
-    display: flex;
-    justify-content: right;
+    @include grid(flex, row, right, center, 0);
     gap: 1rem;
     list-style: none;
-    margin: 0;
     a{
-        text-decoration: none;
-        color:black;
-        font-weight: bold;
-        font-size: 12px;
+        @include links(none, black, bold, 12px);
     }
 }

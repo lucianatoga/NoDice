@@ -1,9 +1,5 @@
 .header-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-    margin-bottom: 1.5rem;
+    @include grid(flex, row, space-between, start, 0 0 1.5rem 0);
 }
 .navbar{
     padding: 0;
@@ -11,9 +7,6 @@
 .navbar-ul{
     gap: 1rem;
     a{
-        color: #6D1A89;
-        text-decoration: none;
-        font-size: 15px;
-        font-weight: bold;
+        @include links(none, $violet, bold, 15px);
     }
 }

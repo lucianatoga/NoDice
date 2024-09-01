@@ -1,0 +1,13 @@
+@mixin grid($display, $flex-direction, $justify-content, $align-items, $margin){
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    margin: $margin;
+}
+@mixin links($text-decoration, $color, $font-weight, $font-size){
+    text-decoration: $text-decoration;
+    color: $color;
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
