@@ -1,3 +1,9 @@
+body{
+    margin: 20px;
+    background-color: $bgColor;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+}
 h1{
     text-align: center;
     color: black;
@@ -33,14 +39,32 @@ main{
 }
 
 /*Servicios.html*/
-.servicios-list{
+.servicios-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.servicios-card{
+    width: 30rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    @include grid(flex, row, space-between, center, 1.5rem);
+    flex-wrap: wrap;
     padding: 1rem;
-    li{
-        padding: 0.5rem;
+    transition: all 1s;
+    &:hover{
+        transform: translateX(30px);
+        background-image: linear-gradient(to right, $bgColor, $green);
     }
     button{
         background-color: $violet;
-        border-color: black;
+        border: 1px solid black;
+        padding: .3rem;
+        font-size: .8rem;
+        border-radius: 6px;
+        &:hover{
+            border: none;
+        }
     }
 }
 
@@ -48,7 +72,7 @@ main{
 .contacto-section{
     margin: 1.5rem 0 1.5rem;
     padding: 0.7rem;
-    border: 1px solid $violet;
+    border: 1px solid $green;
     border-radius: 10px;
 }
 
@@ -63,7 +87,7 @@ main{
     h1{
         font-size: 1.1rem;
     }
-    .body-text p{
+    p{
         font-size: 0.9rem;
     }
     h3{
@@ -79,6 +103,15 @@ main{
             max-width: 300px;
         }
     }
+    .servicios-card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            transform: translateY(20px);
+            background-image: linear-gradient(to bottom, $bgColor, $green);
+        }
+    }
 }
 
 /* TABLET */
@@ -89,6 +122,9 @@ main{
     h1{
         font-size: 1.3rem;
     }
+    h3{
+        font-size: 1.1rem;
+    }
     #carouselExampleAutoplaying{
         width: 450px;
     }
@@ -98,6 +134,10 @@ main{
             width: 40%;
             min-width: 300px;
         }
+    }
+    .servicios-card:hover{
+        transform: translateY(20px);
+        background-image: linear-gradient(to bottom, $bgColor, $green);
     }
 }
 

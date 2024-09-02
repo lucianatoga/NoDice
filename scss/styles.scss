@@ -1,12 +1,5 @@
 @import "./base/variables";
-@import "./utilities/extends";
 @import "./utilities/mixins";
 @import "./layout/header";
 @import "./layout/main";
 
-body{
-    margin: 20px;
-    background-color: $bgColor;
-    font-family: "Montserrat", sans-serif;
-    color: black;
-}
