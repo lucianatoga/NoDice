@@ -7,13 +7,14 @@ body{
 h1{
     text-align: center;
     color: black;
-    font-size: 1.4rem;
-    font-weight: bold;
+    @include headings(1.4rem, bold);
     margin: 1rem 0 1rem;
 }
 h3{
-    font-size: 1.2rem;
-    font-weight: bold;
+    @include headings(1.2rem, bold);
+}
+h4{
+    @include headings(1rem, bold); 
 }
 main{
     min-height: 30rem;
@@ -87,11 +88,14 @@ main{
     h1{
         font-size: 1.1rem;
     }
-    p{
+    p, .politicas li{
         font-size: 0.9rem;
     }
     h3{
         font-size: 1rem;
+    }
+    h4{
+        font-size: 0.9rem;
     }
     #carouselExampleAutoplaying{
         width: 85%;

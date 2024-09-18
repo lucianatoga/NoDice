@@ -40,6 +40,11 @@ h3 {
   font-weight: bold;
 }
 
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 main {
   min-height: 30rem;
 }
@@ -125,11 +130,14 @@ main {
   h1 {
     font-size: 1.1rem;
   }
-  p {
+  p, .politicas li {
     font-size: 0.9rem;
   }
   h3 {
     font-size: 1rem;
+  }
+  h4 {
+    font-size: 0.9rem;
   }
   #carouselExampleAutoplaying {
     width: 85%;

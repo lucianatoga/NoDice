@@ -11,3 +11,7 @@
     font-weight: $font-weight;
     font-size: $font-size;
 }
+@mixin headings($font-size, $font-weight){
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
