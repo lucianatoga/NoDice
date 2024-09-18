@@ -111,6 +111,7 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         &:hover{
             transform: translateY(20px);
             background-image: linear-gradient(to bottom, $bgColor, $green);

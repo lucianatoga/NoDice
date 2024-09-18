@@ -153,6 +153,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .servicios-card:hover {
     transform: translateY(20px);
